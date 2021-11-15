@@ -1,0 +1,104 @@
+@media only screen and (min-width: 560px) {
+    body #masthead {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media  only screen and (min-width: 1280px) {
+    body #masthead {
+        width: calc(calc(782px - 32px) + 256px);
+        max-width: calc(100% - 32px);
+    }
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    color: var(--wp--preset--color--foreground);
+    font-family: var(--font-base, "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    max-width: none;
+    padding-left: 0;
+    position: relative;
+    margin-left: -8px;
+    margin-right: -8px;
+    justify-content: flex-end;
+}
+
+li {
+    display: flex;
+    padding: 8px;
+}
+
+li ::selection{
+    background-color: var(--wp--preset--color--text-selection);
+}
+  
+  
+a {
+    display: block;
+    padding: 12px;
+    background-color: #dddddd;
+}
+
+.site-header {
+    align-self: center;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 16px;
+    grid-template-areas: "site-logo site-logo" "site-title main-navigation" "site-description social-navigation";
+}
+
+.site-title {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: left;
+    align-self: flex-end;
+    color: rgb(48,48,48);
+    display: block;
+    grid-area: site-title;
+    
+}
+
+.site-description {
+    font-size: 15px;
+    font-weight: 400;
+    grid-area: site-description;
+    font-family: var(--font-base, "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif);
+}
+
+.main-menu-container {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 32px;
+    max-width: none;
+    text-align: left;
+    text-size-adjust: 100%;
+}
+
+/* .responsive-max-width {
+    max-width: calc(640px - 32px);
+} */
+
+.main-navigation {
+    align-self: center;
+    grid-area: main-navigation;
+    justify-self: flex-end;
+}
